@@ -1,0 +1,184 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LITHISH.EDITZ | Editor, Photographer, Videographer</title>
+<meta name="description" content="Freelance video editor, photographer and videographer creating cinematic edits and professional content at affordable prices.">
+<meta property="og:title" content="LITHISH.EDITZ"><meta property="og:description" content="Turn your vision into cinematic reality."><meta property="og:type" content="website"><meta name="theme-color" content="#07090D">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#07090D;--panel:#0E1218;--cyan:#22D3EE;--em:#34D399;--vio:#8B5CF6;--chrome:#C9CED6;--body:#94a3b8;--grad:linear-gradient(135deg,#22D3EE,#34D399)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font:16px/1.6 Inter,system-ui,sans-serif;color:var(--body);background:linear-gradient(var(--ink),var(--panel));overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',serif;color:#fff;line-height:1.1}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}ul{list-style:none;padding:0}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.glass{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px);border-radius:24px}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+section{position:relative;max-width:1120px;margin:auto;padding:110px 20px}
+.t{text-align:center;font-size:clamp(2rem,6vw,3.8rem);margin-bottom:48px}.t+p{margin-top:-30px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:99px;padding:12px 24px;font-weight:600;cursor:pointer;color:#fff;background:none;border:1px solid rgba(201,206,214,.4);transition:transform .2s,box-shadow .2s}
+.btn:hover{box-shadow:0 0 30px #22D3EE55;border-color:var(--cyan)}.btn.s{background:var(--grad);color:var(--ink);border:0}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:70}
+nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:calc(100% - 24px);max-width:900px;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 14px;border-radius:99px}
+nav .b{display:flex;gap:8px;align-items:center;font:700 16px 'Playfair Display',serif;color:#fff}
+nav ul{display:none;gap:20px;font-size:14px}nav ul a:hover{color:#fff}
+#burger{background:none;border:0;color:#fff;font-size:24px;cursor:pointer}
+#drawer{display:none;position:fixed;top:76px;left:12px;right:12px;z-index:59;padding:24px;background:rgba(14,18,24,.96)}#drawer.o{display:grid;gap:16px}#drawer a{color:#fff;font-size:18px}
+@media(min-width:960px){nav ul{display:flex}#burger{display:none}}
+#home{min-height:100vh;max-width:none;display:grid;place-items:center;text-align:center;overflow:hidden;padding-top:110px}
+#home video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ov{position:absolute;inset:0;background:rgba(7,9,13,.75)}
+.orb{position:absolute;width:380px;height:380px;border-radius:50%;filter:blur(90px);pointer-events:none}
+.hi{position:relative;max-width:960px}.badge{display:inline-block;padding:6px 16px;border-radius:99px;font-size:13px;color:var(--chrome)}
+h1{font-size:clamp(2.6rem,8vw,6rem);font-weight:900;margin:28px 0 0}h1 span{display:inline-block;overflow:hidden;margin-right:.25em;vertical-align:bottom}
+h1 i{display:inline-block;font-style:normal;transform:translateY(110%);animation:up .7s forwards}@keyframes up{to{transform:none}}
+.brand{font:700 1.9rem 'Playfair Display',serif;margin-top:20px}.lead{max-width:640px;margin:18px auto 0;font-size:1.1rem}
+.row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:30px}
+.fl{position:absolute;font-size:48px;opacity:.25;animation:fl 6s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-16px)}}
+.dn{position:absolute;bottom:24px;color:var(--chrome);animation:fl 2s infinite}
+.g{display:grid;gap:24px}@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:760px)and (max-width:1000px){.g3{grid-template-columns:1fr 1fr}}
+.pt{position:relative;max-width:340px;margin:auto;aspect-ratio:4/5;border-radius:32px;border:1px solid rgba(201,206,214,.3);background:var(--panel);display:grid;place-items:center;text-align:center;font-size:14px;padding:20px;box-shadow:0 0 70px #22D3EE33}
+.pt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:32px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.tags li{padding:8px 16px;border-radius:99px;font-size:14px;color:#fff;opacity:0;transform:scale(.8);transition:.5s}.in .tags li,.tags.in li{opacity:1;transform:none}
+.card{padding:24px;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,border-color .3s}.card:hover{transform:translateY(-8px);box-shadow:0 0 40px #22D3EE33;border-color:rgba(34,211,238,.4)}
+.pv{height:130px;border-radius:16px;margin-bottom:20px;display:grid;place-items:center;font-size:48px;background:linear-gradient(135deg,rgba(34,211,238,.2),var(--panel),rgba(139,92,246,.2))}
+.card h3{font-size:1.6rem}.card p{font-size:14px;margin-top:8px}.card ul{margin:16px 0 24px;flex:1;font-size:14px;display:grid;gap:8px}.card li:before{content:"✓ ";color:var(--em)}
+.pop{border-color:rgba(34,211,238,.6);box-shadow:0 0 50px #22D3EE33;position:relative}.pop em{position:absolute;top:-12px;left:24px;background:var(--grad);color:var(--ink);font:700 12px Inter;padding:4px 12px;border-radius:99px}
+.price{font:2rem 'Playfair Display',serif;color:#fff;margin-top:10px}
+#tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:36px}#tabs button{padding:8px 16px;border-radius:99px;color:#fff;cursor:pointer;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}#tabs .on{background:var(--grad);color:var(--ink);font-weight:600;border:0}
+#grid{columns:1;column-gap:16px}@media(min-width:620px){#grid{columns:2}}@media(min-width:960px){#grid{columns:3}}
+.it{position:relative;display:block;width:100%;margin-bottom:16px;overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:var(--panel);cursor:pointer;text-align:left;padding:0;color:#fff;animation:fi .5s}.it:nth-child(3n+1){aspect-ratio:4/5}.it:not(:nth-child(3n+1)){aspect-ratio:16/9}
+@keyframes fi{from{opacity:0;transform:scale(.95)}}
+.it .m{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:grid;place-items:center;font-size:12px;color:var(--body);text-align:center;padding:12px;background:linear-gradient(135deg,rgba(34,211,238,.15),var(--panel),rgba(139,92,246,.15));transition:transform .5s}.it:hover .m{transform:scale(1.1)}
+.pl{position:absolute;inset:0;display:grid;place-items:center}.pl b{width:54px;height:54px;border-radius:50%;background:rgba(0,0,0,.5);border:1px solid rgba(201,206,214,.4);display:grid;place-items:center}
+.cap{position:absolute;inset:auto 0 0;padding:14px;background:linear-gradient(transparent,rgba(0,0,0,.85));opacity:0;transition:.3s;font-size:12px}.cap b{font:700 15px 'Playfair Display',serif;display:block}.it:hover .cap,.it:focus-visible .cap{opacity:1}
+#lb{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.92);display:none;place-items:center;padding:16px}#lb.o{display:grid}
+#lb .in2{width:100%;max-width:980px;color:#fff;text-align:center}#lb video,#lb iframe,#lb img.f{width:100%;max-height:80vh;border:0;border-radius:12px;aspect-ratio:16/9;background:var(--panel)}#lb img.f{aspect-ratio:auto;object-fit:contain}
+#lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:10px}
+.cmp{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:var(--panel);user-select:none}.cmp img,.cmp div.p{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:grid;place-items:center;font-size:12px}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}.cmp .h{position:absolute;top:0;bottom:0;width:2px;background:var(--cyan);pointer-events:none}.cmp .h:after{content:"";position:absolute;top:50%;left:-17px;width:36px;height:36px;border-radius:50%;background:var(--grad)}
+#rv{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:none}#rv figure{flex:0 0 min(85%,320px);scroll-snap-align:center;padding:24px}
+.ph{display:inline-block;font:700 10px Inter;border:1px solid rgba(139,92,246,.6);color:var(--vio);border-radius:99px;padding:4px 12px}blockquote{margin:16px 0;color:#e2e8f0}
+form{max-width:680px;margin:auto;padding:32px;display:grid;gap:16px}label{display:grid;gap:6px;font-size:14px}
+input,select,textarea{width:100%;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:12px 16px;color:#fff}select option{background:var(--panel)}
+.er{color:#f87171;font-size:12px}.soc{padding:40px;display:block;transition:.3s}.soc:hover{transform:translateY(-8px);box-shadow:0 0 40px #22D3EE33}.soc svg{width:48px;height:48px}.soc h3{font-size:2rem;margin-top:20px}
+footer{border-top:1px solid rgba(255,255,255,.1);padding:48px 20px;text-align:center}footer .ic{display:flex;gap:18px;justify-content:center;margin:20px 0;color:#fff}footer svg{width:24px;height:24px}
+svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv,.tags li{opacity:1;transform:none}h1 i{transform:none}}
+</style></head><body>
+<div id="bar"></div>
+<nav class="glass" aria-label="Main"><a href="#home" class="b"><span class="logo"></span><span id="bn"></span></a><ul id="links"></ul><span style="display:flex;gap:8px;align-items:center"><a href="#contact" class="btn s" style="padding:8px 16px;font-size:14px">Book Your Edit</a><button id="burger" aria-label="Menu" aria-expanded="false">☰</button></span></nav>
+<div id="drawer" class="glass"></div>
+<main>
+<section id="home"><video id="hv" muted loop playsinline autoplay preload="metadata" aria-hidden="true" hidden></video><div class="ov"></div>
+<div class="orb" id="o1" style="background:#22D3EE33;top:-40px;left:-80px"></div><div class="orb" id="o2" style="background:#8B5CF633;bottom:0;right:0"></div>
+<span class="fl" style="left:8%;top:30%">🎞</span><span class="fl" style="right:10%;top:36%;animation-delay:-3s">📷</span>
+<div class="hi"><span class="badge glass">Freelance Video Editor • Photographer • Videographer</span><h1 id="h1"></h1><p class="brand gt" id="hb"></p>
+<p class="lead">Hey, I'm Lithish — a freelance video editor, photographer, and videographer. I create cinematic edits, stunning visuals, and professional content at affordable prices.</p>
+<div class="row"><a href="#work" class="btn s">Explore My Work</a><a href="#contact" class="btn">Book Your Edit</a></div><div class="row" id="stats"></div></div><a href="#about" class="dn" aria-label="Scroll down">⌄</a></section>
+<section id="about"><h2 class="t rv">BEHIND THE LENS</h2><div class="g g2" style="align-items:center"><div class="rv"><div class="pt" id="pt">Portrait placeholder – replace in CONFIG</div></div><div class="rv"><p style="font-size:1.1rem" id="ab"></p><ul class="tags" id="sk"></ul><div id="ach"></div></div></div></section>
+<section id="services"><h2 class="t rv">SERVICES</h2><div class="g g3" id="sv"></div></section>
+<section id="work"><h2 class="t rv">MY WORK</h2><div id="tabs" role="tablist"></div><div id="grid"></div></section>
+<section id="pricing"><h2 class="t rv">PREMIUM CREATIVITY. AFFORDABLE PRICES.</h2><div class="g g3" id="pr"></div><p class="rv" style="text-align:center;margin-top:40px">Every project is unique. Contact me for affordable custom pricing.</p></section>
+<section id="reviews"><h2 class="t rv">CLIENT REVIEWS</h2><div id="rv" tabindex="0" aria-label="Client reviews"></div></section>
+<section id="contact"><h2 class="t rv">LET'S CREATE SOMETHING AMAZING.</h2><p class="rv" style="text-align:center;margin-bottom:30px">Have a project in mind? Let's bring your vision to life.</p><div class="row" id="cb" style="margin:0 0 40px"></div>
+<div class="glass rv"><form id="f" novalidate><label>Name<input name="name" autocomplete="name"><span class="er"></span></label><label>Phone or email<input name="contact"><span class="er"></span></label>
+<label>Service required<select name="service"></select><span class="er"></span></label><label>Project description<textarea name="message" rows="4"></textarea><span class="er"></span></label>
+<div class="g g2"><label>Budget (optional)<input name="budget"></label><label>Deadline (optional)<input name="deadline" type="date"></label></div><button class="btn s" style="justify-content:center">Send Inquiry</button></form><div id="ok" hidden style="text-align:center;padding:50px" role="status"><h3 class="gt" style="font-size:2rem">Thank you!</h3><p>Your inquiry is on its way. I'll get back to you soon.</p></div></div></section>
+<section id="social"><h2 class="t rv">FOLLOW MY CREATIVE JOURNEY</h2><div class="g g2" id="so"></div></section>
+</main>
+<footer><span class="logo" style="display:inline-block"></span><p style="font:700 1.6rem 'Playfair Display',serif;color:#fff;margin-top:10px" id="fb"></p><p>Turning moments into cinematic memories.</p><div class="ic" id="fi"></div>
+<button class="btn" id="up" aria-label="Back to top">↑</button><p style="margin-top:24px;font-size:14px">© 2026 LITHISH.EDITZ. All rights reserved.</p></footer>
+<div id="lb" role="dialog" aria-modal="true"><button id="x" aria-label="Close" style="top:8px;right:8px">×</button><button id="pv" aria-label="Previous" style="left:4px">‹</button><button id="nx" aria-label="Next" style="right:4px">›</button><div class="in2" id="lbc"></div></div>
+<script>
+const CONFIG={
+ brand:'LITHISH.EDITZ',
+ logo:'https://ibb.co/gbbSKvr2',
+ whatsapp:'916379791722',
+ email:'lithish1214@gmail.com',
+ instagram:'https://instagram.com/Lithish.Editz', youtube:'https://youtube.com/@Lithish.Editz', handle:'Lithish.Editz',
+ formEndpoint:'',
+ heroVideo:'', heroPoster:'',
+ portrait:'',
+ stats:[],
+ achievements:[],
+ about:"I'm Lithish, a passionate freelance creative specializing in cinematic video editing, photography, and video shooting. I transform ordinary moments into extraordinary visual experiences. Whether you need a cinematic personal edit, a social media reel, a professional photoshoot, or event videography, I focus on delivering creative quality, attention to detail, and affordable pricing. My goal is to bring your ideas to life through powerful visuals and storytelling.",
+ skills:['Video Editing','Color Grading','Motion & Transitions','Photography','Videography','Storytelling'],
+ services:[
+  {title:'Video Editing',icon:'🎬',desc:'Cinematic edits shaped around your story, pacing and music.',features:['Cinematic editing','Instagram Reels','YouTube Shorts','Mass & stylish edits','Birthday edits','Wedding & event edits','Travel & lifestyle edits','Promotional videos','Color grading','Smooth transitions & VFX']},
+  {title:'Photography',icon:'📷',desc:'Portraits and lifestyle shoots with a cinematic eye.',features:['Portrait','Personal photoshoots','Birthday photoshoots','Lifestyle','Creative cinematic photography']},
+  {title:'Videography',icon:'🎥',desc:'On-location shooting for events, brands and personal stories.',features:['Professional video shooting','Birthday & event videography','Cinematic personal videos','Promotional shooting','Social media content shooting']}],
+ portfolio:[
+  {title:'Yamaha MT-15 Status Video',category:'Instagram Reels',type:'youtube',thumb:'',src:'iRg6EGmbFVk'},
+  {title:'Cinematic Edit Sample',category:'Cinematic Edits',type:'mp4',thumb:'',src:''},
+  {title:'Reel Sample',category:'Instagram Reels',type:'mp4',thumb:'',src:''},
+  {title:'YouTube Video Sample',category:'YouTube Videos',type:'youtube',thumb:'',src:''},
+  {title:'Portrait Sample',category:'Photography',type:'image',thumb:'',src:''},
+  {title:'Event Videography Sample',category:'Videography',type:'mp4',thumb:'',src:''},
+  {title:'Color Grade Before/After',category:'Before & After',type:'compare',thumb:'',before:'',after:''},
+  {title:'Cinematic Edit Sample 2',category:'Cinematic Edits',type:'mp4',thumb:'',src:''}],
+ pricing:[
+  {name:'Basic Edit',price:'',features:['Clean cuts & trims','Music sync','Basic color correction']},
+  {name:'Cinematic Edit',price:'',popular:true,features:['Cinematic pacing','Advanced color grading','Smooth transitions & VFX','Sound design']},
+  {name:'Premium Edit',price:'',features:['Full creative direction','Motion graphics','Premium color grade','Priority delivery']},
+  {name:'Photography',price:'',features:['Planned photoshoot','Edited & retouched photos','Digital delivery']},
+  {name:'Videography',price:'',features:['Professional shooting','Event or personal coverage','Edited final video']}],
+ showReviews:true,
+ reviews:[1,2,3].map(n=>({name:'Client name',role:'Project type',text:'Placeholder review '+n.'. Replace this text with a real client review.'}))
+};
+const C=CONFIG,$=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const wa=t=>`https://wa.me/${C.whatsapp}?text=${encodeURIComponent(t)}`;
+const ICO={ig:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
+ yt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>',
+ wa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.4-4A8 8 0 1 1 8 18.6z"/></svg>'};
+const logo=(s=36)=>C.logo?`<img src="${e(C.logo)}" width="${s}" height="${s}" alt="LITHISH.EDITZ logo" style="border-radius:50%">`:`<svg width="${s}" height="${s}" viewBox="0 0 48 48" role="img" aria-label="LITHISH.EDITZ logo"><circle cx="24" cy="24" r="21" fill="none" stroke="#C9CED6" stroke-width="2"/><path d="M19 15l14 9-14 9z" fill="#22D3EE" opacity=".35"/><text x="24" y="29" text-anchor="middle" fill="#fff" font-family="serif" font-size="14" font-weight="700">LE</text></svg>`;
+document.querySelectorAll('.logo').forEach(n=>n.innerHTML=logo(36));
+$('#bn').textContent=$('#fb').textContent=$('#hb').textContent=C.brand;$('#bn').style.cssText='display:none';matchMedia('(min-width:600px)').matches&&($('#bn').style.display='inline');
+const L=[['Home','home'],['About','about'],['Services','services'],['Work','work'],['Pricing','pricing'],...(C.showReviews?[['Reviews','reviews']]:[]),['Contact','contact']];
+$('#links').innerHTML=L.map(([n,i])=>`<li><a href="#${i}">${n}</a></li>`).join('');$('#drawer').innerHTML=L.map(([n,i])=>`<a href="#${i}">${n}</a>`).join('');
+$('#burger').onclick=()=>{const o=$('#drawer').classList.toggle('o');$('#burger').setAttribute('aria-expanded',o)};$('#drawer').onclick=()=>$('#drawer').classList.remove('o');
+if(C.heroVideo){const v=$('#hv');v.src=C.heroVideo;v.poster=C.heroPoster;v.hidden=false}
+$('#h1').innerHTML='TURN YOUR VISION INTO CINEMATIC REALITY.'.split(' ').map((w,i)=>`<span><i style="animation-delay:${2+i*.09}s">${w}</i></span>`).join('');
+$('#stats').innerHTML=C.stats.map(s=>`<div class="glass" style="padding:8px 20px;color:#fff"><b>${e(s.value)}</b> ${e(s.label)}</div>`).join('');
+if(C.portrait)$('#pt').innerHTML=`<img src="${e(C.portrait)}" alt="Portrait of Lithish" loading="lazy">`;
+$('#ab').textContent=C.about;$('#sk').innerHTML=C.skills.map((s,i)=>`<li class="glass" style="transition-delay:${i*.07}s;border-radius:99px">${e(s)}</li>`).join('');
+$('#ach').innerHTML=C.achievements.map(a=>`<div class="glass" style="padding:16px;margin-top:12px"><h3 style="font-size:1.1rem">${e(a.title)}</h3><p style="font-size:14px">${e(a.detail)}</p></div>`).join('');
+const quote=n=>{const s=$('[name=service]');s.value=n;location.hash='contact'};
+$('#sv').innerHTML=C.services.map(s=>`<article class="glass card rv"><div class="pv" aria-hidden="true">${s.icon}</div><h3>${e(s.title)}</h3><p>${e(s.desc)}</p><ul>${s.features.map(f=>`<li>${e(f)}</li>`).join('')}</ul><button class="btn s" data-q="${e(s.title)}" style="justify-content:center">Get a Quote</button></article>`).join('');
+$('#pr').innerHTML=C.pricing.map(p=>`<article class="glass card rv ${p.popular?'pop':''}">${p.popular?'<em>Most Popular</em>':''}<h3>${e(p.name)}</h3><p class="price">${p.price?e(p.price):'Contact for quote'}</p><ul style="margin-top:20px">${p.features.map(f=>`<li>${e(f)}</li>`).join('')}</ul><button class="btn ${p.popular?'s':''}" data-q="${e(p.name)}" style="justify-content:center">Get a Quote</button></article>`).join('');
+document.addEventListener('click',ev=>{const q=ev.target.closest('[data-q]');if(q)quote(q.dataset.q)});
+const sel=$('[name=service]');sel.innerHTML='<option value="">Select a service</option>'+[...new Set([...C.services.map(s=>s.title),...C.pricing.map(p=>p.name)])].map(n=>`<option>${e(n)}</option>`).join('');
+/* portfolio */
+const TABS=['All','Cinematic Edits','Instagram Reels','YouTube Videos','Photography','Videography','Before & After'];let tab='All',cur=0,list=[];
+$('#tabs').innerHTML=TABS.map(t=>`<button role="tab" aria-selected="${t==='All'}" class="${t==='All'?'on':''}">${t}</button>`).join('');
+$('#tabs').onclick=ev=>{const b=ev.target.closest('button');if(!b)return;tab=b.textContent;[...$('#tabs').children].forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});draw()};
+function draw(){list=C.portfolio.filter(p=>tab==='All'||p.category===tab);$('#grid').innerHTML=list.map((p,i)=>`<button class="it" data-i="${i}" aria-label="Open ${e(p.title)}">${p.thumb?`<img class="m" src="${e(p.thumb)}" alt="${e(p.title)}" loading="lazy" decoding="async">`:'<div class="m">Placeholder – replace in CONFIG</div>'}${p.type==='image'||p.type==='compare'?'':'<span class="pl"><b>▶</b></span>'}<span class="cap"><b>${e(p.title)}</b>${e(p.category)}</span></button>`).join('')}
+draw();$('#grid').onclick=ev=>{const b=ev.target.closest('.it');if(b)open(+b.dataset.i)};
+function open(i){cur=(i+list.length)%list.length;const p=list[cur];let m;const PH='<div class="cmp" style="display:grid;place-items:center;font-size:14px">Placeholder – replace in CONFIG</div>';
+ if(p.type==='compare')m=`<div class="cmp">${p.after?`<img src="${e(p.after)}" alt="After">`:'<div class="p">After placeholder</div>'}<div id="bf" style="position:absolute;inset:0;clip-path:inset(0 50% 0 0)">${p.before?`<img src="${e(p.before)}" alt="Before">`:'<div class="p" style="background:var(--panel)">Before placeholder</div>'}</div><div class="h" id="hd" style="left:50%"></div><input type="range" min="0" max="100" value="50" aria-label="Before and after slider" oninput="bf.style.clipPath='inset(0 '+(100-this.value)+'% 0 0)';hd.style.left=this.value+'%'"></div>`;
+ else if(!p.src)m=PH;else if(p.type==='youtube')m=`<iframe src="https://www.youtube.com/embed/${e(p.src)}?autoplay=1" title="${e(p.title)}" allow="autoplay;encrypted-media;fullscreen" allowfullscreen></iframe>`;
+ else if(p.type==='mp4')m=`<video src="${e(p.src)}" poster="${e(p.thumb)}" controls autoplay playsinline></video>`;else m=`<img class="f" src="${e(p.src)}" alt="${e(p.title)}">`;
+ $('#lbc').innerHTML=m+`<p style="margin-top:12px;font-family:'Playfair Display',serif">${e(p.title)}</p>`;$('#lb').classList.add('o');document.body.style.overflow='hidden';$('#x').focus()}
+function close(){$('#lb').classList.remove('o');$('#lbc').innerHTML='';document.body.style.overflow=''}
+$('#x').onclick=close;$('#pv').onclick=()=>open(cur-1);$('#nx').onclick=()=>open(cur+1);$('#lb').onclick=ev=>{if(ev.target.id==='lb')close()};
+addEventListener('keydown',ev=>{if(!$('#lb').classList.contains('o'))return;if(ev.key==='Escape')close();if(ev.key==='ArrowRight')open(cur+1);if(ev.key==='ArrowLeft')open(cur-1)});
+/* reviews */
+if(!C.showReviews)$('#reviews').remove();else{$('#rv').innerHTML=C.reviews.map(v=>`<figure class="glass"><span class="ph">PLACEHOLDER – REPLACE WITH REAL REVIEW</span><blockquote>${e(v.text)}</blockquote><figcaption style="font-size:14px">${e(v.name)} · ${e(v.role)}</figcaption></figure>`).join('');
+ if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(()=>{const r=$('#rv');r.scrollLeft+r.clientWidth>=r.scrollWidth-4?r.scrollTo({left:0,behavior:'smooth'}):r.scrollBy({left:340,behavior:'smooth'})},4500);
+ let d,sx,sl;const r=$('#rv');r.onpointerdown=ev=>{if(ev.pointerType==='mouse'){d=1;sx=ev.clientX;sl=r.scrollLeft;r.style.scrollSnapType='none'}};addEventListener('pointermove',ev=>{if(d)r.scrollLeft=sl-(ev.clientX-sx)});addEventListener('pointerup',()=>{if(d){d=0;r.style.scrollSnapType=''}})}
+/* contact */
+$('#cb').innerHTML=`<a class="btn s" href="${wa("Hi Lithish! I'd like to discuss a project.")}" target="_blank" rel="noopener">${ICO.wa.replace('<svg','<svg class="i"')} WhatsApp</a><a class="btn" href="${e(C.instagram)}" target="_blank" rel="noopener">${ICO.ig.replace('<svg','<svg class="i"')} Instagram</a><a class="btn" href="${e(C.youtube)}" target="_blank" rel="noopener">${ICO.yt.replace('<svg','<svg class="i"')} YouTube</a><a class="btn" href="mailto:${e(C.email)}">✉ Email</a>`;
+$('#f').onsubmit=async ev=>{ev.preventDefault();const f=ev.target,d=Object.fromEntries(new FormData(f)),er={name:!d.name.trim()&&'Enter your name',contact:!d.contact.trim()&&'Enter your phone or email',service:!d.service&&'Choose a service',message:d.message.trim().length<10&&'Describe your project (10+ characters)'};
+ let bad=0;for(const k in er){const s=f.elements[k].parentNode.querySelector('.er');s.textContent=er[k]||'';if(er[k])bad=1}if(bad)return;
+ const t=`Hi Lithish! New inquiry:\nName: ${d.name}\nContact: ${d.contact}\nService: ${d.service}\nProject: ${d.message}\nBudget: ${d.budget||'-'}\nDeadline: ${d.deadline||'-'}`;
+ try{if(!C.formEndpoint)throw 0;const r=await fetch(C.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});if(!r.ok)throw 0}catch{window.open(wa(t),'_blank','noopener')}
+ f.hidden=true;$('#ok').hidden=false};
+$('#so').innerHTML=[[ICO.ig,'Instagram',C.instagram],[ICO.yt,'YouTube',C.youtube]].map(([i,n,u])=>`<a class="glass soc rv" href="${e(u)}" target="_blank" rel="noopener" style="color:#fff">${i}<h3>${n}</h3><p style="color:var(--body)">@${e(C.handle)}</p></a>`).join('');
+$('#fi').innerHTML=[[ICO.ig,C.instagram,'Instagram'],[ICO.yt,C.youtube,'YouTube'],[ICO.wa,wa('Hi Lithish!'),'WhatsApp']].map(([i,u,n])=>`<a href="${e(u)}" target="_blank" rel="noopener" aria-label="${n}">${i}</a>`).join('');
+$('#up').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+/* motion */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});document.querySelectorAll('.rv,.tags').forEach(n=>io.observe(n));
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+addEventListener('scroll',()=>{const y=scrollY;$('#bar').style.width=(y/(document.body.scrollHeight-innerHeight)*100)+'%';if(!rm&&y<900){$('#o1').style.transform=`translateY(${-y*.2}px)`;$('#o2').style.transform=`translateY(${-y*.1}px)`}},{passive:true});
+if(!rm)document.querySelectorAll('.btn').forEach(b=>{b.onmousemove=ev=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(ev.clientX-r.left-r.width/2)*.2}px,${(ev.clientY-r.top-r.height/2)*.2}px)`};b.onmouseleave=()=>b.style.transform=''});
+</script></body></html>
